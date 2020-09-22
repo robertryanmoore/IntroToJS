@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>My Site</title>
+    </head>
+    <body>
+        <div id="myButton" onclick="alert('hello');">
+            Click Me 1
+        </div>
+        <div id="myButton1">
+            Click Me 2
+        </div>
+        <div id="myButton2">
+            Click Me 3
+        </div>
+        <script>
+            var myVar1 = "String"; //Characters
+            var _myVar2 = 10; //Number
+            var $myVar3 = true; // Boolean
+            
+            var myVar4 = ["string", 5, true, "string 2"];
+            console.log(myVar4[3]); //array index starts at 0
+
+            myVar4.push("string 3");
+            console.log(myVar4.length);
+            console.log(myVar4[myVar4.length-1]);
+
+            myVar4.pop();            
+            console.log(myVar4[myVar4.length-1]);
+
+            myVar4.shift();
+
+            console.log(myVar4);
+
+            console.log(myVar4.indexOf("string 2"));
+
+            myVar4.forEach(function(i,k){
+                console.log(i + " " + k);
+            });
+
+        </script>     
+    </body>
+</html>

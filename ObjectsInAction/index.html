@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>My Site</title>
+    </head>
+    <body>
+        <script>
+           var myObj1 = new Object();
+           myObj1.Car = "Ford"
+           myObj1.Year = 2010;
+           myObj1.Model = "Mustang";
+           myObj1.Cost = 50000;
+
+           myObj1.Year=2015;
+
+           console.log(myObj1);
+
+           var myObj2 = {
+               Car: "Hoonda",
+               Year: 2017,
+               Model: "Civic",
+               Cost: 30000
+           };
+
+           console.log(myObj2);
+
+           var myObj3 = new myFun("Toyota", 2015,"Corolla", 40000);
+
+           function myFun(a,b,c,d){
+               this.Car = a;
+               this.Year = b;
+               this.Model = c;
+               this.Cost = d;
+           }
+
+           console.log(myObj2["Car"]);
+           console.log(myObj3.Car);
+           
+        </script>    
+    </body>
+</html>
